@@ -1,0 +1,18 @@
+on:
+  push:
+    branches: [main, master]
+    workflow_dispath:
+    jobs:
+      build:
+      runs-on: ubuntu-lastest
+      steps:
+        name: 
+        uses: action/checkout@v4
+
+        name: build
+        uses: make build
+
+        name test:
+          run: make run
+
+      
