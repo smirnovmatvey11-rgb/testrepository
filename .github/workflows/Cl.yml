@@ -2,17 +2,16 @@ on:
   push:
     branches: [main, master]
     workflow_dispath:
-    jobs:
-      build:
+  jobs:
+    build:
       runs-on: ubuntu-lastest
       steps:
-        name: 
-        uses: action/checkout@v4
+        - uses: action/checkout@v4
 
-        name: build
-        uses: make build
+        - name: build
+          uses: make build
 
-        name test:
+        - name test:
           run: make run
 
       
