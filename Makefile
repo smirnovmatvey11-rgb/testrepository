@@ -4,14 +4,14 @@
 # 	g++ main.o app 
 all: app
 
-app: main.o sum.o
-	g++ -o main main.o sum.o
+app: main.o func.o
+	g++ -o main main.o func.o
 
-main.o: main.cpp sum.h
+main.o: main.cpp func.h
 	g++ -c main.cpp -o main.o
 
-sum.o: sum.cpp sum.h
-	g++ -c sum.cpp -o sum.o
+func.o: func.cpp func.h
+	g++ -c func.cpp -o func.o
 
 test: app
 	./app
