@@ -5,7 +5,7 @@
 all: app
 
 app: main.o func.o
-	g++ -o main main.o func.o
+	g++ -o app main.o func.o
 
 main.o: main.cpp func.h
 	g++ -c main.cpp -o main.o
