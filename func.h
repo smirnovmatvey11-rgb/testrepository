@@ -1,5 +1,6 @@
 #ifndef FUNC_H
 #define FUNC_H
+#include <string>
 
 int sum(long long a, long long b);
 bool isPrime(long long a);
