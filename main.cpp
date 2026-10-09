@@ -7,4 +7,6 @@ int main(){
     std::cout << isPrime(a) << "\n";
     std::cout << gcd(a, b) << "\n";
     std::cout << fibonacci(a) << "\n";
+    Rectangle;
+    Square;
 }

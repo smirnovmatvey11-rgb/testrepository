@@ -8,5 +8,8 @@ long long fibonacci(int n);
 long long swap_ptr(long long *a, long long *b);
 long long wap_ptr(long long &a, long long &b);
 long long sum_arr(const int* arr, int n);
+class Shape;
+class Rectangle;
+class Square;
 
 #endif
