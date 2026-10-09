@@ -49,32 +49,3 @@ long long sum_arr(const int* arr, int n){
     }
     return temp;
 }
-
-class Shape{
-public:
-    int height = 1;
-    int width = 1;
-    virtual int area() const = 0;
-    virtual std::string name() {return "GenericType";}
-    virtual ~Shape() = default;
-};
-
-class Rectangle : public Shape{
-public:
-    int area(){
-        return width * height;
-    }
-    std::string name(){
-        return "rectangle( " + std::to_string(width) + " , " + std::to_string(height) + " )";
-    }
-};
-
-class Square : public Shape{
-public:
-    int area(){
-        return width * width;
-    }
-    std::string name(){
-        return "square( " + std::to_string(width) + " , " + std::to_string(width) + " )";
-    }
-};

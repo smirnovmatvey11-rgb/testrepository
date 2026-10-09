@@ -7,6 +7,13 @@ int main(){
     std::cout << isPrime(a) << "\n";
     std::cout << gcd(a, b) << "\n";
     std::cout << fibonacci(a) << "\n";
-    Rectangle;
-    Square;
+    Rectangle rec;
+    Square sq;
+    rec.height = 5;
+    rec.width = 3;
+    sq.width = 4;
+    std::cout << rec.area() << "\n";
+    std::cout << rec.name() << "\n";
+    std::cout << sq.area() << "\n"; 
+    std::cout << sq.name() << "\n";
 }
