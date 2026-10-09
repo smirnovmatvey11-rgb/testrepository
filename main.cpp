@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "func.h"
 int main(){
     int a, b;
