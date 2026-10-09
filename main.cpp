@@ -1,7 +1,7 @@
 #include <iostream>
 #include "func.h"
 int main(){
-    int a, b;
+    int a = 2, b = 3;
     std::cin >> a >> b;
     std::cout << sum(a, b) << "\n";
     std::cout << isPrime(a) << "\n";
