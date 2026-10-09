@@ -28,3 +28,23 @@ long long fibonacci(int n) {
     if (n == 1) return 1;
     return fibonacci(n - 1) + fibonacci(n - 2);
 }
+
+long long swap_ptr(long long *a, long long *b){
+    long long temp = *a;
+    *a = *b;
+    return *a, temp;
+}
+
+long long wap_ptr(long long &a, long long &b){
+    long long temp = a;
+    a = b;
+    return a, temp;
+}
+
+long long sum_arr(const int* arr, int n){
+    long long temp;
+    for(int i = 0; i < n; i++){
+        temp += arr[i];
+    }
+    return temp;
+}
