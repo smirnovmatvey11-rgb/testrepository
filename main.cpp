@@ -16,4 +16,8 @@ int main(){
     std::cout << rec.name() << "\n";
     std::cout << sq.area() << "\n"; 
     std::cout << sq.name() << "\n";
+    DynamicArray<int32_t> arr;
+    arr.getCapacity();
+    arr.getSize();
+    arr[1] = 5;
 }
