@@ -44,7 +44,7 @@ private:
     T* data;
     size_t capacity;
     size_t size;
-
+public:
     void resize(size_t new_capacity) {
         T* new_data = new T[new_capacity];
         
@@ -57,7 +57,19 @@ private:
         capacity = new_capacity;
     }
 
-public:
+    void resize(size_t new_size) {
+        size_t new_capacity = (new_size - size) * sizeof(T);
+        T* new_data = new T[new_capacity];
+        
+        for (size_t i = 0; i < size; ++i) {
+            new_data[i] = data[i];
+        }
+        
+        delete[] data;
+        data = new_data;
+        capacity = new_capacity;
+    }
+
     DynamicArray() : data(nullptr), capacity(0), size(0) {}
     ~DynamicArray() {
         delete[] data;
@@ -70,7 +82,7 @@ public:
             size = other.size;
             capacity = other.capacity;
             if (capacity > 0) {
-                data = new int[capacity];
+                data = new T[capacity];
                 for (size_t i = 0; i < size; ++i) {
                     data[i] = other.data[i];
                 }
@@ -81,11 +93,11 @@ public:
         return *this;
     }
 
-    int& at(size_t index) {
+    T& at(size_t index) {
         return data[index];
     }
 
-    int& operator[](size_t index) {
+    T& operator[](size_t index) {
         return data[index];
     }
     size_t getSize() const { return size; }
