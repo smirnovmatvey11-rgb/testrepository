@@ -19,5 +19,6 @@ int main(){
     DynamicArray<int32_t> arr;
     arr.getCapacity();
     arr.getSize();
+    arr.resize(3);
     arr[1] = 5;
 }
