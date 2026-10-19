@@ -5,8 +5,8 @@ int main(){
     assert(sum(2, 3) == 5);
     assert(isPrime(13) == true);
     assert(gcd(2, 4) == 2);
-    assert(fibonacci(8) == 21);
-
+    assert(fibonacci(8) == 21);  
+    
     long long a = 3, b = 5;
     const int arr[5] = {1, 2, 3, 4, 5};
     swap_ptr(&a , &b);
