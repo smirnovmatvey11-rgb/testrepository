@@ -25,7 +25,7 @@ public:
         return width * height;
     }
     std::string name() const override{
-        return "rectangle( " + std::to_string(width) + " , " + std::to_string(height) + " )";
+        return "rectangle(" + std::to_string(width) + ", " + std::to_string(height) + ")";
     }
 };
 
@@ -35,7 +35,7 @@ public:
         return width * width;
     }
     std::string name() const override{
-        return "square( " + std::to_string(width) + " , " + std::to_string(width) + " )";
+        return "square(" + std::to_string(width) + ", " + std::to_string(width) + ")";
     }
 };
 template <typename T>
