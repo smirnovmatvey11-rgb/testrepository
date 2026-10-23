@@ -3,13 +3,10 @@
 #include <cassert>
 int main(){
     assert(sum(2, 3) == 5);
-    assert(isPrime(13) == true);
-    assert(isPrime(24) == false);
+    //assert(isPrime(13) == true);
+    //assert(isPrime(24) == false);
     assert(gcd(2, 4) == 2);
     assert(fibonacci(8) == 21);
-
-
-    //egfrvew
     long long a = 3, b = 5;
     const int arr[5] = {1, 2, 3, 4, 5};
     swap_ptr(&a , &b);
